@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- local stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Air Quality in Indian Cities</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="headline">
+        <h1 class="article-title">
+          Delhi smog: How many cigarettes did you smoke this week?
+        </h1>
+        <div class="toggle-language">
+          <input
+            id="lang-toggle"
+            class="language-checkbox check-toggle check-toggle-round-flat"
+            type="checkbox"
+          />
+          <label for="lang-toggle"></label>
+          <span class="on">ENG</span>
+          <span class="off">HIN</span>
+        </div>
+      </div>
+      <div class="article-details">
+        <p class="article-author">Author: By me!</p>
+        <p class="article-date">
+          Date: <i class="fa-solid fa-clock-rotate-left"></i> 20 November 2017
+        </p>
+        <p class="article-category">Category: India</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="article-img"></div>
+
+      <div class="article-text">
+        <p class="gray-text">
+          Breathing in Delhi is close to smoking more than a dozen cigarettes a
+          day on an average. Click on your city to find out how many cigarettes
+          you are smoking
+        </p>
+
+        <p class="first-text">
+          On November 7, Indian capital, Delhi woke up to a blanket of thick
+          grey smog. The toxic haze was so severe that politicians announced
+          plans to close schools. United Airlines shut all of its flights from
+          the US to Delhi. Visibility was poor as pollution levels reached 30
+          times the World Health Organization's recommended limit in some areas.
+        </p>
+
+        <p class="second-text">
+          According to the data from the System of Air Quality Weather
+          Forecasting and Research website, the levels of tiny particulate
+          matter (known as PM 2.5) that enter deep into the lungs reached as
+          high as 700 micrograms per cubic metre in some areas of Delhi on
+          November 6th. The air quality standard for PM 2.5 is 15 µg/m3 and
+          anything above 81 µg/m3 falls under poor air quality standard.
+        </p>
+
+        <p class="third-text">
+          Some reports claimed that New Delhi's air quality was so severe it was
+          equivalent to smoking 45 cigarettes a day. We looked at the data to
+          see if this was true.
+        </p>
+      </div>
+
+      <div class="data-section">
+        <h3 class="data-header">
+          Click on your city to find out how many cigarettes you have
+          effectively smoked because of last week's pollution.
+        </h3>
+
+        <p class="data-text">
+          1 cigarette is equivalent to an air pollution of 22 μg/m3 (Absolute
+          value: 21.6 μg/m3) for one day.
+        </p>
+
+        <div class="city-container">
+          <div class="select-container">
+            <h3 class="city-title">Select your city</h3>
+            <select name="city" class="city-options">
+              <option value="">Select your city</option>
+            </select>
+          </div>
+
+          <div class="city-details">
+            <div class="city-air-data">
+              <div class="city-name"></div>
+            </div>
+            <div class="aqi-details">
+              <div class="air-quality">
+                <div class="aqi-title">
+                  <i class="fa-solid fa-wind"></i>
+                  <h3>Air Quality</h3>
+                </div>
+                <p class="aqi">0</p>
+              </div>
+              <div class="cigarette">
+                <div class="cigg-title">
+                  <i class="fa-solid fa-smoking"></i>
+                  <h3>Cigarette</h3>
+                </div>
+                <p class="cigg">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="methodology-section">
+        <h2 class="methodology-title">Methodology for calculation:</h2>
+        <p class="methodology-text-1">
+          A report by Berkeley Earth showed that in China, 1.6 million people
+          die every year from an average exposure of 52 μg/m3 of PM2.5. To kill
+          1.6 million people would require, assuming 1.36 x9^6 deaths per
+          cigarette, 1.1 trillion cigarettes. Since the population of China is
+          1.35 billion, that comes to 764 cigarettes every year per person, or
+          about 2.4 cigarettes per day.
+        </p>
+        <p class="methodology-text-2">
+          Put another way, one cigarette is equivalent to an air pollution of 22
+          μg/m3 (Absolute value: 21.6 μg/m3) for one day.
+        </p>
+        <p class="methodology-text-3">
+          The average PM2.5 in Beijing over the year is about 85 μg/m3,
+          equivalent to about 4 cigarettes per day. Similarly, if the air
+          pollution in New Delhi, India, is 546 μg/m3, it is equivalent to about
+          25 cigarettes each day.
+        </p>
+        <p class="methodology-text-4">
+          We took the PM 2.5 data of 33 cities in India every day for one week.
+          We calculated the mean of 6 days PM 2.5 data of each city and divided
+          it by 21.6 μg/m3 to get the number of cigarettes. It is also
+          imperative to say the numbers shown is the assumption that you ideally
+          spent most of your time breathing air from outside.
+        </p>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  </body>
+</html>
